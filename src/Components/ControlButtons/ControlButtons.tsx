@@ -20,7 +20,7 @@ export const ControlButtons: React.FC<Props> = (props) => {
 
   const pagesCount = useMemo(() => (
     users?.length ? Math.ceil(users.length / 4) : 0
-  ), []);
+  ), [page]);
 
   const setPageHandler = (typeBtn: string) => {
     if (typeBtn === 'back') {
