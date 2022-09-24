@@ -1,0 +1,62 @@
+.control-buttons {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__link {
+    display: block;
+    font-size: 24px;
+
+    color: #EEEEEE;
+
+    text-decoration: none;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 1em;
+    }
+
+    &:hover {
+      color: #c5d3f6;
+    }
+  }
+
+  &__item {
+    font-size: 60px;
+    position: relative;
+    top: 12px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__sort-btn {
+    background-color: #52519D;
+    height: 70px;
+    width: 130px;
+    border-radius: 40px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #EEEEEE;
+
+    transition: background-color 0.3s;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      height: 50px;
+      width: 90px;
+    }
+
+    &:hover {
+      background-color: #6867b6;
+    }
+    &:active {
+      transform: translatey(2px);
+    }
+  }
+}

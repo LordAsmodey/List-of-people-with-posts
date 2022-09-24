@@ -1,0 +1,63 @@
+.user-posts-list {
+  display: none;
+  width: 870px;
+  height: 770px;
+  padding: 70px;
+  background: #333348;
+  border-radius: 40px;
+  overflow-y: auto;
+
+  &__error {
+    color: red;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &__btn-close {
+    position: sticky;
+    left: 770px;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    background-color: #52519D;
+    border: none;
+
+    font-weight: 600;
+    font-size: 24px;
+    color: #EEEEEE;
+
+    transition: background-color 0.3s;
+
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      font-size: 12px;
+    }
+
+    &:hover {
+      background-color: #6867b6;
+    }
+    &:active {
+      transform: translatey(2px);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    height: 1200px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 5px;
+    width: 280px;
+  }
+}
+.user-posts-list::-webkit-scrollbar {
+  width: 0;
+}

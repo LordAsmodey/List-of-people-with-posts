@@ -1,12 +1,33 @@
-.people-list {
+.users-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #12122D;
-  width: 870px;
-  height: 770px;
+
 
   &__wrapper {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-bottom: 30px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  &__error {
+    color: red;
+  }
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
   }
 }

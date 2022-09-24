@@ -9,7 +9,10 @@
     color: #eee;
     font-weight: 400;
     font-size: 24px;
-    line-height: 30px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   &__search-input {
@@ -19,13 +22,22 @@
     border-radius: 40px;
     color: #eee;
     font-size: 24px;
-    line-height: 30px;
     padding: 0 35px;
     border: none;
+
     &::placeholder {
       color: #eee;
       font-size: 24px;
-      line-height: 30px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 180px;
+      height: 50px;
+      font-size: 16px;
+      padding: 0 15px;
     }
   }
 }

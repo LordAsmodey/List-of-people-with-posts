@@ -1,8 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Post } from '../../Types/Post';
 
-const BASE_URL = 'https://mate.academy/students-api';
-const END_POINT = '/posts?userId=';
+const BASE_URL = 'https://jsonplaceholder.typicode.com/users/';
 
 export const postsApi = createApi({
   reducerPath: 'postsByUserId',
@@ -10,7 +9,7 @@ export const postsApi = createApi({
   endpoints: (builder) => ({
 
     getPostsByUserId: builder.query<Post[], number | null>({
-      query: (userId) => `${END_POINT}${userId}`,
+      query: (userId) => `${userId}/posts`,
     }),
 
   }),
