@@ -1,0 +1,50 @@
+.user-card {
+  max-height: 370px;
+  width: 410px;
+  padding: 75px 50px;
+  background-color: #333348;
+  border-radius: 40px;
+
+  &__button {
+    display: block;
+    height: 70px;
+    width: 248px;
+    border-radius: 40px;
+    margin: 30px auto 0;
+    background-color: #52519D;
+    border: none;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #EEEEEE;
+
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #6867b6;
+    }
+    &:active {
+      transform: translatey(2px);
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 0 8px;
+
+    color: #EEEEEE;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: #c5d3f6;
+    }
+  }
+}

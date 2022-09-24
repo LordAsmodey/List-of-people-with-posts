@@ -1,0 +1,12 @@
+.people-list {
+  background-color: #12122D;
+  width: 870px;
+  height: 770px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}

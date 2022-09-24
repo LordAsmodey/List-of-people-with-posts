@@ -1,0 +1,31 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+
+  &__title {
+    color: #eee;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__search-input {
+    width: 248px;
+    height: 70px;
+    background: #333348;
+    border-radius: 40px;
+    color: #eee;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 35px;
+    border: none;
+    &::placeholder {
+      color: #eee;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
