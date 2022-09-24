@@ -1,9 +1,13 @@
-# React TypeScript Starter Pack
+# List of people with displayed posts
 
-To use this template click `Use this template`
+### Used tehnology: React, React router, TypeScrypt, REST API, Redux TK 
 
-### Available Scripts
+## Environment:
+- node: v 14 or more
 
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+## How to install
+ 1. Clone the repository and open it in your dev environment
+ 2. Run ```npm install```
+ 3. Run React app ```npm start```
+ 
+ [DEMO](https://lordasmodey.github.io/List-of-people-with-posts/)
