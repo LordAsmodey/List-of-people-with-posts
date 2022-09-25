@@ -1,4 +1,7 @@
 .control-buttons {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
   width: 100%;
   margin-top: 50px;
   display: flex;
@@ -58,5 +61,9 @@
     &:active {
       transform: translatey(2px);
     }
+  }
+
+  @media (max-width: 1024px) {
+    position: static;
   }
 }
